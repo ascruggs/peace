@@ -1,0 +1,8 @@
+git 				| crime
+________________________
+user 				| crime_type
+dir  				| city
+file 				| address   
+commit_time | occurred_at
+
+                                    

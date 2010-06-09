@@ -1,0 +1,9 @@
+How I did it:
+
+sudo port install gource
+bundle install
+rake db:setup                                   
+GitWriter.write_crimes
+cd lib/gitcrime
+`gource --git-log-command` > my-git-project.log
+gource --highlight-all-users -f  --seconds-per-day 2 db/data/crime-git-time.log

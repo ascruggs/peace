@@ -1,0 +1,36 @@
+===========================
+BohConf Programming Contest
+===========================
+
+Data provided by SpotCrime.com
+
+
+---------------
+crime_types.csv
+---------------
+
+This file is a lookup table for the types of crimes that occur in the database.
+
+Columns:
+
+* id: the primary key identifier for the crime type
+* name: the name of the crime type
+* description: a description of this type of crime
+
+----------
+crimes.csv
+----------
+
+This file contains 8,462 crime points that occurred near Baltimore during April of 2010.
+
+Columns:
+
+* id: a unique identifier for this crime (this is SpotCrime.com's crime id)
+* crime_type_id: a foreign key to the crime_types file above
+* latitude: the latitude the crime occurred at
+* longitude: the longitude the crime occurred at
+* city: the city the crime occurred in
+* address: the address of the crime (approximate. the last two digits are replaced with 0s)
+* link: a link to the details of this crime on SpotCrime.com
+* occurred_at: the date and time the crime occurred
+
